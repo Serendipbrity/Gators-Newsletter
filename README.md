@@ -1,1 +1,1 @@
-# Gator-s-Newsletter
+# Gators-Newsletter
