@@ -4,6 +4,15 @@ A school newsletter to help parents better nagivate important information and up
 # Github Link
 https://github.com/Serendipbrity/Gators-Newsletter
 
+# Member Git hub links
+- Roger Vacovsky
+https://github.com/rvacovsky?tab=repositories
+- Brittani Court
+https://github.com/Serendipbrity?tab=repositories
+- Brianne Ferguson
+https://github.com/brianneferguson?tab=repositories
+
+
 # Published Link
 https://serendipbrity.github.io/Gators-Newsletter/
 
@@ -12,3 +21,4 @@ https://serendipbrity.github.io/Gators-Newsletter/
 -CSS
 -Javascript
 -Ulkit
+
