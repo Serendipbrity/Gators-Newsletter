@@ -9,21 +9,69 @@
     font-size: 200%;
     padding-top: 15px;
     text-decoration: underline;
+    background-color: rgba(255, 231, 135, .50);
+    
 }
 
-body {
+/* body {
     text-align: center;
-}
+} */
 
 #currentDay {
     font-weight: 800;
     color: black;
+    text-align: center;
+    background-color: rgba(255, 231, 135, .50);
+    padding-bottom: 15px;
 }
 
-/* .p {
-    background-color: rgba(255, 231, 135, alpha);
-} */
+.lunchAndEvents {
+    text-align: center;
+
+}
+
+.lunch {
+    text-align: right;
+    margin-right: 175px;
+    display: inline-block;
+    
+}
+
+.lunchBtn {
+    margin: 15px;
+   margin-right: 110px;
+}
+
+.eventContainer {
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.clickHere {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+
+
+.upcoming {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.dates {
+    margin-bottom: 50px;
+    
+}
 
 .weNeedYou {
     text-decoration: underline;
+}
+
+.summer {
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
 }
