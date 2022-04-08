@@ -1,9 +1,19 @@
 .jumbotron {
     text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    padding-top: 15px;
+    text-decoration: underline;
 }
 
 body {
     text-align: center;
-  
 }
 
+#currentDay {
+    font-weight: 800;
+}
+
+.weNeedYou {
+    text-decoration: underline;
+}

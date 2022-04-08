@@ -9,3 +9,4 @@ let fullDate = `${month}.${day}.${year}`;
 console.log("Full date: " + fullDate);
 
 current.innerHTML = "Date: " + fullDate;
+
