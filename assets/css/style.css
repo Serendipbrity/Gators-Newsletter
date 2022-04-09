@@ -1,6 +1,3 @@
-/* * {
-    background-image: url("/Users/brittanicourt/Desktop/projects/Gators-Newsletter/assets/images/recess.jpeg");
-} */
 
 :root {
     --primary-color: rgba(255, 231, 135, .50);
@@ -10,7 +7,6 @@
 
 .jumbotron {
     text-align: center;
-
     font-weight: bold;
     color: black;
     font-size: 200%;
@@ -23,13 +19,11 @@ header img {
     max-width: 6%;
     float: inline-start;
     margin-left: 20px;
-
-
+    position: absolute;
 }
 
 body {
     text-align: center;
-
     background-image: url("../images/recess.jpeg");
 }
 /* date */
@@ -153,6 +147,6 @@ nav {
     margin: 25px;
     font-size: larger;
     color: black;
-
 }
+
 
