@@ -1,5 +1,11 @@
+/* * {
+    background-image: url("/Users/brittanicourt/Desktop/projects/Gators-Newsletter/assets/images/recess.jpeg");
+} */
+
 :root {
-    background-color: rgb(202, 204, 144);
+    --primary-color: rgba(255, 231, 135, .50);
+    --secondary-color: rgba(202, 204, 144, .9);
+    --tertiary-color: rgb(248,248,255);
 }
 
 .jumbotron {
@@ -9,69 +15,128 @@
     font-size: 200%;
     padding-top: 15px;
     text-decoration: underline;
-    background-color: rgba(255, 231, 135, .50);
-    
+    background-color: var(--secondary-color);
 }
 
-/* body {
+body {
     text-align: center;
-} */
-
+    background-image: url("/Users/brittanicourt/Desktop/projects/Gators-Newsletter/assets/images/recess.jpeg");
+}
+/* date */
 #currentDay {
     font-weight: 800;
+    font-size: 20px;
     color: black;
     text-align: center;
-    background-color: rgba(255, 231, 135, .50);
+    background-color: var(--secondary-color);
     padding-bottom: 15px;
 }
 
+/* nav bar start*/
+
+nav {
+    background-color: var(--primary-color);
+  }
+
+ nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+   nav ul li a {
+    margin: 15px;
+    color: darkblue;
+    font-weight:500;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0,  0.5);
+  }
+
+  nav ul li a:hover {
+    background: var(--primary-color);
+    color: black;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+  /* end nav */
+
+.sectionTitles {
+    color: black;
+    font-size: larger;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+
+/* lunch and events full container */
 .lunchAndEvents {
     text-align: center;
 
 }
 
+/* .lunch img {
+    max-width: 30%;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+} */
+/* lunch container */
 .lunch {
     text-align: right;
     margin-right: 175px;
-    display: inline-block;
+   display: inline-block;
     
 }
 
 .lunchBtn {
-    margin: 15px;
-   margin-right: 110px;
+   margin: 15px;
+   margin-right: 130px;
+  
 }
 
-.eventContainer {
-    margin-left: 25px;
-    display: inline-block;
-}
-
+/* lunch title */
 .clickHere {
     margin-top: 15px;
     font-size: 25px;
     font-weight: 700;
-    
+    color: white;
 }
 
+.eventContainer {
+    margin-top: 15px;
+    margin-left: 25px;
+   display: inline-block;
+}
 
+/* iframe header */
 .upcoming {
     font-weight: 700;
+    color: white;
     font-size: 25px;
     margin-bottom: 15px;
+    text-decoration: underline;
 }
-
+/* <iframe> */
 .dates {
     margin-bottom: 50px;
     
 }
-
-.weNeedYou {
-    text-decoration: underline;
-}
-
-.summer {
-    font-weight: 700;
+  
+ .summer {
+    font-weight: 900;
     margin: 10px;
     text-align: center;
+    background-color: var(--secondary-color);
 }
+
+
+/* each announcement div */
+.announce {
+    background-color: var(--secondary-color);
+    margin: 25px;
+    font-size: larger;
+    color: black;
+}
+
