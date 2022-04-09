@@ -5,7 +5,7 @@
 :root {
     --primary-color: rgba(255, 231, 135, .50);
     --secondary-color: rgba(202, 204, 144, .9);
-    --tertiary-color: rgb(248,248,255);
+    --tertiary-color: rgba(248,248,255, .8);
 }
 
 .jumbotron {
@@ -16,6 +16,12 @@
     padding-top: 15px;
     text-decoration: underline;
     background-color: var(--secondary-color);
+}
+
+header img {
+    max-width: 6%;
+    float: inline-start;
+    margin-left: 20px;
 }
 
 body {
@@ -87,7 +93,16 @@ nav {
     text-align: right;
     margin-right: 175px;
    display: inline-block;
-    
+   background-color: var(--tertiary-color);
+   padding: 20px;
+}
+
+/* lunch title */
+.clickHere {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 700;
+
 }
 
 .lunchBtn {
@@ -96,24 +111,20 @@ nav {
   
 }
 
-/* lunch title */
-.clickHere {
-    margin-top: 15px;
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-}
 
+/* event and title container */
 .eventContainer {
     margin-top: 15px;
     margin-left: 25px;
-   display: inline-block;
+    display: inline-block;
+    background-color: var(--tertiary-color);
+    margin-bottom: 0px;
+    margin-right: 40px;
 }
 
 /* iframe header */
 .upcoming {
     font-weight: 700;
-    color: white;
     font-size: 25px;
     margin-bottom: 15px;
     text-decoration: underline;
