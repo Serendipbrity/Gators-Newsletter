@@ -8,10 +8,9 @@
 .jumbotron {
     text-align: center;
     font-weight: bold;
-    color: black;
+    color: darkgreen;
     font-size: 200%;
     padding-top: 15px;
-    text-decoration: underline;
     background-color: var(--secondary-color);
 }
 
@@ -30,7 +29,7 @@ body {
 #currentDay {
     font-weight: 800;
     font-size: 20px;
-    color: black;
+    color: darkgreen;
     text-align: center;
     background-color: var(--secondary-color);
     padding-bottom: 15px;
@@ -51,7 +50,7 @@ nav {
 
    nav ul li a {
     margin: 15px;
-    color: darkblue;
+    color: darkgreen;
     font-weight:500;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0,  0.5);
@@ -59,7 +58,7 @@ nav {
 
   nav ul li a:hover {
     background: var(--primary-color);
-    color: black;
+    color: forestgreen;
     border-radius: 15px;
     text-shadow: none;
   }
@@ -67,7 +66,7 @@ nav {
   /* end nav */
 
 .sectionTitles {
-    color: black;
+    color: darkgreen;
     font-size: larger;
     font-weight: 800;
     text-decoration: underline;
@@ -89,11 +88,11 @@ nav {
 /* lunch container */
 .lunch {
     text-align: right;
-    margin-right: 175px;
-   display: inline-block;
-   background-color: var(--tertiary-color);
-   padding: 20px;
-   vertical-align: middle;
+    display: inline-block;
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    vertical-align: middle;
+    margin: 10px;
 }
 
 /* lunch title */
@@ -107,8 +106,14 @@ nav {
 .lunchBtn {
    margin: 15px;
    margin-right: 130px;
-  
+   background-color: darkgreen;
 }
+
+.lunchBtn:hover {
+    margin: 15px;
+    margin-right: 130px;
+    background-color: forestgreen;
+ }
 
 
 /* event and title container */
@@ -151,4 +156,32 @@ nav {
     color: black;
 }
 
+span {
+    font: bold;
+    color: darkgreen;
+}
 
+.newsletter-images {
+    position: relative;
+    border-radius: 5px;
+}
+
+.uk-accordion-title {
+    color: darkgreen;
+}
+
+.uk-accordion-title:hover {
+    color: forestgreen;
+}
+
+announcements {
+    font-size: x-large;
+}
+
+.uk-heading-medium {
+    color: darkgreen;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    margin: 25px;
+    padding: 10px;
+}

@@ -6,6 +6,26 @@ var fetchButton = document.getElementById('fetch-button');
 var currentDate = moment().format("dddd, MMMM Do, YYYY");
 $("#currentDay").text(currentDate);
 
+// function getWeather() {
+//     var requestTemp = 'https://https://fcc-weather-api.glitch.me/api/current?lat=37.44&lon=77.65';
+//     fetch(requestTemp)
+//         .then(function (response) {
+//         return response.json();
+//         })
+//         .then(function (data) {
+//             // Use the console to examine the response
+//             console.log(data);
+//             for(i = 0; i < data.length; i++) {
+//                 var temp = document.createElement("div");
+//                 temp.innerHTML = data.main[0].temp;
+//                 userContainer.appendChild(temp);  
+//         };
+//         console.log(data.main[0].temp);
+//     });
+// }
+// getWeather;
+
+
 function getApi() {
     var requestUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
     fetch(requestUrl)
