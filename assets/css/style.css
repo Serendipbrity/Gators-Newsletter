@@ -93,6 +93,7 @@ nav {
    display: inline-block;
    background-color: var(--tertiary-color);
    padding: 20px;
+   vertical-align: middle;
 }
 
 /* lunch title */
@@ -118,6 +119,7 @@ nav {
     background-color: var(--tertiary-color);
     margin-bottom: 0px;
     margin-right: 40px;
+    vertical-align: middle;
 }
 
 /* iframe header */
