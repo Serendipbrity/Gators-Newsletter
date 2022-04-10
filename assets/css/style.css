@@ -107,6 +107,7 @@ nav {
    margin: 15px;
    margin-right: 130px;
    background-color: darkgreen;
+   
 }
 
 .lunchBtn:hover {
@@ -114,7 +115,6 @@ nav {
     margin-right: 130px;
     background-color: forestgreen;
  }
-
 
 /* event and title container */
 .eventContainer {
@@ -174,10 +174,6 @@ span {
     color: forestgreen;
 }
 
-announcements {
-    font-size: x-large;
-}
-
 .uk-heading-medium {
     color: darkgreen;
     background-color: var(--secondary-color);
@@ -185,3 +181,5 @@ announcements {
     margin: 25px;
     padding: 10px;
 }
+
+

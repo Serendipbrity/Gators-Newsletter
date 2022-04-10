@@ -35,14 +35,16 @@ function getApi() {
         .then(function (data) {
         // Use the console to examine the response
         console.log(data);
-        // for(i = 0; i < data.length; i++) {
+        
             var name = document.createElement("div");
             name.innerHTML = data.meals[0].strMeal;
             userContainer.appendChild(name); 
-            
-        // };
+      
         console.log(data.meals[0].strMeal);
+        //allows button to be clicked only once
+        $("#fetch-button").off('click');
+       
     });
 }
-fetchButton.addEventListener('click', getApi);
+$("#fetch-button").on('click', getApi);
 
