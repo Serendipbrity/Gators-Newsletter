@@ -66,6 +66,97 @@ nav {
 
   /* end nav */
 
+  /* ---- absent modal start ---- */
+#modal-content {
+    background: #efefef;
+    margin: 35px auto;
+    width: 60%;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.25);
+}
+
+#modal-header {
+    background: #4586de;
+    color: #ffff;
+    padding: 25px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#modal-header .close-modal {
+    font-size: 50px;
+    float: right;
+}
+
+#modal-header .close-modal:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+#modal-body {
+    padding: 25px 30px;
+}
+#abLink {
+    float: right;
+}
+
+#modal-body h2 {
+    color: #4586de;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0;
+}
+/* text above input */
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form-group textarea, input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+.form-group textarea:focus, input:focus {
+    outline-style:auto;
+}
+
+.options {
+    padding: 20px;
+    width: 103%;
+    margin-right: 10%;
+    padding-left: 0;
+}
+
+#warning {
+    padding: 10px;
+}
+
+/* submit button */
+input[type="submit"] {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 75%;
+    background-color: #4586de;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: #ffff;
+    }
+
+input[type="submit"]:hover {
+    background: #3e78c7;
+}
+
+/* ---- absent modal end ---- */
+
 .sectionTitles {
     color: black;
     font-size: larger;
@@ -80,12 +171,6 @@ nav {
 
 }
 
-/* .lunch img {
-    max-width: 30%;
-    float: left;
-    margin-left: 30px;
-    margin-top: 15px;
-} */
 /* lunch container */
 .lunch {
     text-align: right;
