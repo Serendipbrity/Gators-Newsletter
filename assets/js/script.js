@@ -2,16 +2,9 @@ var current = document.querySelector("#currentDay");
 var userContainer = document.getElementById('users');
 var fetchButton = document.getElementById('fetch-button');
 
-let date = new Date();
-let day = date.getDate();
-let month = date.getMonth()  + 1;
-let year = date.getFullYear();
-
-let fullDate = `${month}.${day}.${year}`;
-console.log("Full date: " + fullDate);
-
-current.innerHTML = "Date: " + fullDate;
-
+// get today's date for header
+var currentDate = moment().format("dddd, MMMM Do, YYYY");
+$("#currentDay").text(currentDate);
 
 function getApi() {
     var requestUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
