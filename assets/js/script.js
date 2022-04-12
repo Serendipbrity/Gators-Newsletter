@@ -6,24 +6,21 @@ var fetchButton = document.getElementById('fetch-button');
 var currentDate = moment().format("dddd, MMMM Do, YYYY");
 $("#currentDay").text(currentDate);
 
-// function getWeather() {
-//     var requestTemp = 'https://https://fcc-weather-api.glitch.me/api/current?lat=37.44&lon=77.65';
-//     fetch(requestTemp)
-//         .then(function (response) {
-//         return response.json();
-//         })
-//         .then(function (data) {
-//             // Use the console to examine the response
-//             console.log(data);
-//             for(i = 0; i < data.length; i++) {
-//                 var temp = document.createElement("div");
-//                 temp.innerHTML = data.main[0].temp;
-//                 userContainer.appendChild(temp);  
-//         };
-//         console.log(data.main[0].temp);
-//     });
-// }
-// getWeather;
+
+var getWeather =function(text) {
+
+var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=37.45&lon=77.65&exclude=hourly&appid=51a61d96cb3c110846e5130afe5ac605";
+
+    fetch(apiUrl).then(function(response) {
+        
+        console.log(response);
+        response.json().then(function(data) {
+        console.log(data);
+        });
+    });
+};
+
+
 
 
 function getApi() {
