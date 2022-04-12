@@ -21,6 +21,7 @@
         </li>
         <li>
             <a href="#summer-school">Summer School</a>
+            <a id="abBtn">Absentee</a>
         </li>
         <li>
             <a href="#volunteer">Volunteer</a>
@@ -36,6 +37,48 @@
         </li>
      </ul>
     </nav>
+    
+      <div id="absentee" class="modal">
+        <div id="modal-content">
+            <div id="modal-header">
+                <span class="close-modal">&times;</span>
+                <h1>Absentee Form</h1>
+            </div>
+            <div id="modal-body">
+                <div>
+                    <a id="abLink">Absence Record</a>
+                    <div id="storedInput" type="text"></div>
+                </div>
+                <h2>Reason for absence</h2>
+                <form id="save">
+                    <div class="form-group">
+                        <label for="student-name">Student Name</label>
+                        <input id="student" type="text" placeholder="Enter Student Name"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="parent-name">Parent/Guardian Name</label>
+                        <input id="parent" type="text" placeholder="Enter Parent/Guardian Name"></input>
+                    </div>
+                    <div class="options form-group">
+                        <label>Reason</label>
+                        <select class = "uk-select">
+                            <option>---Select One---</option>
+                            <option>Doctor's Appointment</option>
+                            <option>Emergency</option>
+                            <option>Vacation</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="info">Additional Info</label>
+                        <textarea id="info" type="text" placeholder="Enter Additional Info"></textarea>
+                    </div>
+                    <div id="warning">Any student who misses 18 or more days of school will not be eligible to recieve course credit and/or will be subject to retention</div>
+                    <input id="submitBtn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
         <div class="lunchAndEvents">
             <section class="lunch">
                 <p>Today's temperature:</p>
@@ -48,9 +91,7 @@
                 <button class="lunchBtn btn btn-primary uk-button uk-button-primary" id="fetch-button">
                     Today's Lunch
                 </button>
-                <div>
-                    <div class="" id="users"></div>
-                </div>
+                <div id="users"></div>
             </section>
             <section class="eventContainer ">
                 <div class="upcoming"> Upcoming events: </div>
@@ -109,7 +150,7 @@
             </ul>
 
         <div class="announce uk-card uk-card-default uk-card-body" >
-            <p id="summer-school" class="summer">
+            <p class="summer">
                 <div class="sectionTitles">Summer School</div>
 
                 <p>SUMMER SCHOOL WILL BE AT SWIFT CREEK THIS SUMMER!</p>
