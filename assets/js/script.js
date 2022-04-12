@@ -18,7 +18,7 @@ current.innerHTML = "Date: " + fullDate;
 var modal = document.getElementById("absentee");
 // x to close
 var closeModal = document.querySelector(".close-modal");
-// absent button
+// absent button in nav
 var abBtn = document.getElementById("abBtn");
 // submit button
 var submitBtn = document.getElementById("submitBtn");
@@ -82,5 +82,8 @@ function getApi() {
 }
 fetchButton.addEventListener('click', getApi);
 // ---- api for meals end ----
-
-
+var volunteer = document.getElementById("volunteer");
+var hereLink = document.getElementById("here");
+hereLink.addEventListener('click', function() {
+    volunteer.style.display = "block";
+})
