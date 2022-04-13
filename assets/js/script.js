@@ -53,11 +53,16 @@ var info = document.getElementById("info");
 submitBtn.addEventListener('click', function() {
     // exit modal when click submit
     modal.style.display = "none";
+    var absence = {
+        student: student.value,
+        parent: parent.value,
+        info: info.value 
+    }
+    console.log(absence);
     // store user inputs
-    localStorage.setItem("text", student.value);
-    localStorage.setItem("text", parent.value);
-    localStorage.setItem("text", info.value);
-    console.log(student.value, parent.value, info.value);
+    localStorage.setItem("absences", JSON.stringify(absence));
+ 
+    console.log(absence);
     // reset text fields to empty
     form.reset();
 });
@@ -65,14 +70,14 @@ var storedInput = document.getElementById("storedInput");
 var abLink = document.getElementById("abLink");
 
 abLink.addEventListener('click', function() {
-   var studentName =  localStorage.getItem("text", student.value);
-   var parentName = localStorage.getItem("text", parent.value);
-   var infoInput = localStorage.getItem("text", info.value);
-
-   var allInputs =  (studentName, parentName, infoInput);
-   storedInput.innerHTML.appendChild(allInputs);
+    console.log("clicked");
+var storedInput = JSON.parse(localStorage.getItem("absences"))
+console.log(storedInput);
+var abRecord = getElementById("abRecord");
+document.getElementById("date").textContent = currentDate;
 
 })
+
 
 // ---- absent form end ----
 
@@ -97,10 +102,10 @@ function getApi() {
        
     });
 }
-fetchButton.addEventListener('click', getApi);
-// ---- api for meals end ----
-var volunteer = document.getElementById("volunteer");
-var hereLink = document.getElementById("here");
-hereLink.addEventListener('click', function() {
-    volunteer.style.display = "block";
-})
+// fetchButton.addEventListener('click', getApi);
+// // ---- api for meals end ----
+// var volunteer = document.getElementById("volunteer");
+// var hereLink = document.getElementById("here");
+// hereLink.addEventListener('click', function() {
+//     volunteer.style.display = "block";
+// })
