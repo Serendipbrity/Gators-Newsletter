@@ -225,10 +225,9 @@ input[type="submit"]:hover {
     display: inline-block;
     background-color: var(--tertiary-color);
     margin-bottom: 0px;
-    margin-right: 40px;
     vertical-align: middle;
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px;
 }
 
 /* iframe header */
@@ -258,11 +257,13 @@ input[type="submit"]:hover {
     margin: 25px;
     font-size: larger;
     color: black;
+    border-radius: 5px;
 }
 
 span {
     font: bold;
     color: darkgreen;
+    font-weight: bold;
 }
 
 .newsletter-images {
@@ -272,10 +273,16 @@ span {
 
 .uk-accordion-title {
     color: darkgreen;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .uk-accordion-title:hover {
     color: forestgreen;
+}
+
+.uk-accordion-content p {
+    padding: 10px;
 }
 
 .uk-heading-medium {
@@ -284,6 +291,23 @@ span {
     font-weight: bold;
     margin: 25px;
     padding: 10px;
+    border-radius: 5px;
 }
 
+.left {
+    float: left;
+    padding: 20px;
+}
 
+.right {
+    float: right;
+    padding: 0 30px 30px 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .newsletter-images {
+        display: none;
+    }
+
+}
