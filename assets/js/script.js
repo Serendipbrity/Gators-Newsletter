@@ -2,11 +2,6 @@ var current = document.querySelector("#currentDay");
 var userContainer = document.getElementById('users');
 var fetchButton = document.getElementById('fetch-button');
 var getTemp = document.getElementById('temp');
-// current date
-// var date = new Date();
-// var day = date.getDate();
-// var month = date.getMonth()  + 1;
-// var year = date.getFullYear();
 
 // get today's date for header
 var currentDate = moment().format("dddd, MMMM Do, YYYY");
@@ -56,29 +51,34 @@ fetch("https://api.openweathermap.org/data/2.5/onecall?lat=37.4516&lon=-77.6592&
 // var parent = document.getElementById("parent");
 // var info = document.getElementById("info");
 
-// submitBtn.addEventListener('click', function() {
-//     // exit modal when click submit
-//     modal.style.display = "none";
-//     // store user inputs
-//     localStorage.setItem("text", student.value);
-//     localStorage.setItem("text", parent.value);
-//     localStorage.setItem("text", info.value);
-//     console.log(student.value, parent.value, info.value);
-//     // reset text fields to empty
-//     form.reset();
-// });
-// var storedInput = document.getElementById("storedInput"); 
-// var abLink = document.getElementById("abLink");
+submitBtn.addEventListener('click', function() {
+    // exit modal when click submit
+    modal.style.display = "none";
+    var absence = {
+        student: student.value,
+        parent: parent.value,
+        info: info.value 
+    }
+    console.log(absence);
+    // store user inputs
+    localStorage.setItem("absences", JSON.stringify(absence));
+ 
+    console.log(absence);
+    // reset text fields to empty
+    form.reset();
+});
+var storedInput = document.getElementById("storedInput"); 
+var abLink = document.getElementById("abLink");
 
-// abLink.addEventListener('click', function() {
-//    var studentName =  localStorage.getItem("text", student.value);
-//    var parentName = localStorage.getItem("text", parent.value);
-//    var infoInput = localStorage.getItem("text", info.value);
+abLink.addEventListener('click', function() {
+    console.log("clicked");
+var storedInput = JSON.parse(localStorage.getItem("absences"))
+console.log(storedInput);
+var abRecord = getElementById("abRecord");
+document.getElementById("date").textContent = currentDate;
 
-//    var allInputs =  (studentName, parentName, infoInput);
-//    storedInput.innerHTML.appendChild(allInputs);
+})
 
-// })
 
 // ---- absent form end ----
 
@@ -105,16 +105,5 @@ function getApi() {
 }
 //event listener for lunch api
 $("#fetch-button").on('click', getApi);
-//event listener for temperature
-
-
-
-// // ---- api for meals end ----
-// var volunteer = document.getElementById("volunteer");
-// var hereLink = document.getElementById("here");
-// hereLink.addEventListener('click', function() {
-//     volunteer.style.display = "block";
-// })
-
 
 
