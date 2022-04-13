@@ -74,7 +74,7 @@ nav {
 }
 
 #modal-header {
-    background: #4586de;
+    background: forestgreen;
     color: #ffff;
     padding: 25px 30px;
     text-align: center;
@@ -100,7 +100,7 @@ nav {
 }
 
 #modal-body h2 {
-    color: #4586de;
+    color: darkgreen;
     text-transform: uppercase;
     font-size: 25px;
     text-align: center;
@@ -143,7 +143,7 @@ input[type="submit"] {
     font-size: 30px;
     margin-bottom: 20px;
     width: 75%;
-    background-color: #4586de;
+    background-color: darkgreen;
     cursor: pointer;
     border-radius: 10px;
     border: none;
@@ -151,7 +151,7 @@ input[type="submit"] {
     }
 
 input[type="submit"]:hover {
-    background: #3e78c7;
+    background: forestgreen;
 }
 
 /* ---- absent modal end ---- */
@@ -169,6 +169,20 @@ input[type="submit"]:hover {
     text-align: center;
 
 }
+/* temperature container */
+.temperature {
+    text-align: center;
+    display: inline-block;
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    vertical-align: middle;
+    margin: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 700;
+
+}
 
 /* lunch container */
 .lunch {
@@ -178,6 +192,7 @@ input[type="submit"]:hover {
     padding: 20px;
     vertical-align: middle;
     margin: 10px;
+    border-radius: 5px;
 }
 
 /* lunch title */
@@ -192,6 +207,7 @@ input[type="submit"]:hover {
    margin: 15px;
    margin-right: 130px;
    background-color: darkgreen;
+   border-radius: 5px;
    
 }
 
@@ -199,6 +215,7 @@ input[type="submit"]:hover {
     margin: 15px;
     margin-right: 130px;
     background-color: forestgreen;
+    border-radius: 5px;
  }
 
 /* event and title container */
@@ -210,6 +227,8 @@ input[type="submit"]:hover {
     margin-bottom: 0px;
     margin-right: 40px;
     vertical-align: middle;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* iframe header */
