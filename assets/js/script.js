@@ -3,7 +3,7 @@ var userContainer = document.getElementById('users');
 var fetchButton = document.getElementById('fetch-button');
 var getTemp = document.getElementById('temp');
 
-// get today's date for header
+//----------- get today's date for header------------
 var currentDate = moment().format("dddd, MMMM Do, YYYY");
 $("#currentDay").text(currentDate);
 
@@ -26,9 +26,10 @@ fetch("https://api.openweathermap.org/data/2.5/onecall?lat=37.4516&lon=-77.6592&
     
         };
 
+// ----------------end of todays date -----------------
 
 
-// ---- absent form start ----
+// ----------- absent form start ------------
 
 // whole modal
 var modal = document.getElementById("absentee");
@@ -69,8 +70,10 @@ submitBtn.addEventListener('click', function() {
     // reset text fields to empty
     form.reset();
 
-    // console.log(JSON.parse(localStorage.getItem(absences.info).value));
 });
+// ----------- end absence form ------------------
+
+// --------- absence record ----------------------
 
 // "absence record" link
 var abLink = document.getElementById("abLink");
@@ -86,8 +89,6 @@ storedInput.append(stored);
 
 console.log(stored);
 
-// document.getElementById("stu").textContent = stored[0];
-
 // show stored input
 storedInput.classList.remove('hide');
 storedInput.classList.add('show');
@@ -100,26 +101,24 @@ form.classList.add('hide');
 abLink.classList.remove('show');
 abLink.classList.add('hide');
 
+// add student input to student:
+document.getElementById("stu").textContent = stored.student;
+
+// add parent input to parent:
+document.getElementById("par").textContent = stored.parent;
 
 // add current date to Date Missed:
 document.getElementById("date").textContent = currentDate;
 
-
-// document.getElementById("inf").textContent = 
-
-// for (var i = 0; i < localStorage.length; i++) {
-//     console.log(localStorage.getItem(localStorage.key(i)))
-  
-//   }
+// add additional info
+document.getElementById("inf").textContent = stored.info;
   
 })
 
+// --------------- absence record end ------------
 
 
-
-// ---- absent form end ----
-
-// ---- api for meals start ----
+// ------------ api for meals start ------------
 function getApi() {
     var requestUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
     fetch(requestUrl)
