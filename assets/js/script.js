@@ -6,8 +6,10 @@ var getTemp = document.getElementById('temp');
 //----------- get today's date for header------------
 var currentDate = moment().format("dddd, MMMM Do, YYYY");
 $("#currentDay").text(currentDate);
+// ----------------end of todays date -----------------
 
 
+// ------------ weather api --------------
 fetch("https://api.openweathermap.org/data/2.5/onecall?lat=37.4516&lon=-77.6592&units=imperial&exclude=hourly,daily,minutely&appid=51a61d96cb3c110846e5130afe5ac605")
     .then(function (response) {
         return response.json();
@@ -26,7 +28,7 @@ fetch("https://api.openweathermap.org/data/2.5/onecall?lat=37.4516&lon=-77.6592&
     
         };
 
-// ----------------end of todays date -----------------
+
 
 
 // ----------- absent form start ------------

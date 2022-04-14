@@ -192,21 +192,6 @@ input[type="submit"]:hover {
     text-align: center;
 
 }
-/* temperature container */
-.temperature {
-    text-align: center;
-    display: inline-block;
-    background-color: var(--tertiary-color);
-    padding: 20px;
-    vertical-align: middle;
-    margin: 10px;
-    border-radius: 5px;
-    margin-top: 15px;
-    font-size: 25px;
-    font-weight: 700;
-
-}
-
 
 /* lunch container */
 .lunch {
@@ -351,6 +336,20 @@ span {
 .left {
     float: left;
     padding: 20px;
+}
+
+/* temperature container -- moved to bottom to ensure css is kept */
+.temperature {
+    text-align: center;
+    display: inline-block;
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    vertical-align: middle;
+    margin: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 600px) {
