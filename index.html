@@ -11,240 +11,237 @@
 </head>
 <body>
     <header class="jumbotron">Swift Creek Connections
-        <img src="./assets/images/Making a Difference Logo.jpg"/>
+        <img id="headImg" src="./assets/images/Gator Mascot.png"/>
     </header>
-    <p id="currentDay"></p>
-
+    <!-- date -->
+    <p id="currentDay" class="lead"></p>
+    <!------- nav bar start ------->
     <nav>
       <ul>
         <li>
-            <a href="#summer-school">Summer School</a>
+            <a id="abBtn">Absentee</a>
         </li>
         <li>
-            <a href="#volunteer">Volunteer</a>
+            <a id="newnote" href="#announcements">New & Noteworthy</a>
         </li>
         <li>
-            <a href="#dress-code">Dress Code</a>
+            <a id= "vol" href="#volunteer">Volunteer</a>
         </li>
         <li>
-            <a href="#save-date">Save the Date</a>
-        </li>
-        <li>
-            <a href="#announcements">Announcements</a>
-        </li>
-        <li>
-            <a href="#resources">Resources</a>
+            <a id="re" href="#resources">Resources</a>
         </li>
      </ul>
     </nav>
+    <!------- nav bar end ------->
+
+    <!------- modal ------->
+    <div id="absentee" class="modal">
+        <div id="modal-content">
+                <div id="modal-header">
+                    <span class="close-modal">&times;</span>
+                    <h1>Absentee Form</h1>
+                </div>
+            <div id="modal-body">
+                <div id="abForm">
+                        <div>
+                            <a class="show" id="abLink">Absence Record</a>
+                            <h2 id="reason">Reason for absence</h2> 
+                            <!------ absence record ------>
+                                <div>
+                                    <div id="storedInput" class="hide" type="text">
+                                        <div>Student: <span id="stu"></span></div>
+                                        <div>Parent/Guardian: <span id="par"></span></div>
+                                        <div>Date Missed: <span id="date"></span></div>
+                                        <div>Additional Info: <span id="inf"></span></div>
+                                    </div>
+                                </div>
+                            <!------ end absence record ------>
+                            <form id="form" class="show">
+                                <div class="form-group">
+                                    <label for="student-name">Student Name</label>
+                                    <input id="student" type="text" placeholder="Enter Student Name"></input>
+                                </div>
+                                <div class="form-group">
+                                    <label for="parent-name">Parent/Guardian Name</label>
+                                    <input id="parent" type="text" placeholder="Enter Parent/Guardian Name"></input>
+                                </div>
+                                <div class="options form-group">
+                                    <label>Reason</label>
+                                    <select class = "uk-select">
+                                        <option>---Select One---</option>
+                                        <option>Doctor's Appointment</option>
+                                        <option>Emergency</option>
+                                        <option>Vacation</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="info">Additional Info</label>
+                                    <textarea id="info" type="text" placeholder="Enter Additional Info"></textarea>
+                                </div>
+                                <div id="warning">Any student who misses 18 or more days of school will not be eligible to recieve course credit and/or will be subject to retention</div>
+                                <input id="submitBtn" type="submit" value="Submit"> 
+                            </form>
+                        </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-------- end modal -------->
+
+    <!------- lunch section start  -------->
         <div class="lunchAndEvents">
-            <section class="lunch ">
-                <img src="./assets/images/Gator Mascot.png"/>
+            <section class="temperature">
+                <p>Current temperature at SCES:</p>
+                <div id="temp"></div>            
+            </section>
+            <section class="lunch">
                 <p class="clickHere">
                 Click here to see today's school lunch
-
-    <div>
-        <p>Learning With You connects with multicultural community
-            Learning With You is designed to help members of the multicultural community
-            connect with Chesterfield County Public Schools. This free, four-part program is part of CCPS on the Go! Participants will get an overview of the
-            school division, then take a deeper dive into topics like budgeting, instruction, operations and long-range planning. This is an opportunity to
-            develop an understanding of all the components of one of the largest school divisions in the nation. Each Learning With You gathering will take
-            place 6-8:30 p.m. at the School Board Administration Building, located at 9900 Krause Road.
-        </p>
-    </div>
-    <div>
-        <p>
-            As the weather gets nicer, let's help our Gators remember the following:
-                Shirts should be worn to cover the full stomach area and should meet or go past their waistband on their pants/shorts; no crop tops.
-                Spaghetti straps on shirts are not appropriate for school.
-                Shorts should be finger tip in length
-                Shoes should have backs; flip flops and slides are a safety concern
-                Sports balls should remain at home; we have equipment for students to use at recess
-        </p>
-    </div>
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-        <h3 class="uk-card-title">We Need You!</h3>
-        <p>
-            Next year's PTA now has just two vacant positions: Treasurer and 5K Committee Chair.
-            The Treasurer is a vital role for the PTA. If we don't have one, the PTA won't be able to operate
-            next year. The gig runs in tandem with the PTAs fiscal year: July 1 - June 30. If you are good with
-            figures and believe in promoting the educational vitality of your child(ren) and SCES as a whole, please
-            volunteer! We are currently in the process of planning this year's 5K. It's a team effort with Woolridge
-            Elementary and Clover Hill Elementary. If you're interested in the position and want to get a front-row
-            seat to see how it comes together before you take the role full-time, now is the perfect time to step up!
-            Please contact Catherine Vacovsky at vp@swiftcreekpta.org or via Facebook Messenger if you're interested in either position.
-        </p>
-    </div>
-    <div>
-        <p>
-            Join us for the Reservoir Race Series on May 1st!
-            Clover Hill Elementary, Swift Creek Elementary, and Woolridge Elementary have joined forces and created the
-            Reservoir Run for 2022. Instead of three separate races, these schools will be hosting one large event on
-            Sunday, May 1. This event includes a kids fun run at 2:00 pm as well as a 5k or 10k option that begins at 2:30
-            pm. We hope you will be a part of it! The purpose of this race is not only to bring together three neighboring
-            school communities, but to also raise money for each school. This money will allow the schools to further
-            enhance school enrichment with items such as new technology and equipment, health and wellness
-            programs, staff conference sponsorships, and children's engineering programs, which will benefit students
-            and teachers alike.
-        </p>
-    </div>
-    <div>
-        <p>
-            SUMMER SCHOOL WILL BE AT SWIFT CREEK THIS SUMMER!
-            School meets Monday - Thursday,
-            June 27th, to July 21st.
-            9 AM - 1 PM
-            MORE INFORMATION AHEAD!
-        </p>
-    </div>
-    <div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center uk-grid">
-        <div>
-            <div class="uk-tile uk-tile-primary">
-                <p class="uk-h4">
-                    SOL TIME IS GATOR SPEED AHEAD!
-                    While we know this is WAY ahead -- that's on purpose. We want to give families as much time as possible
-                    to plan! We know that students do best when they take the test as scheduled and as planned so … HERE'S THE SCHEDULE! Please do
-                    your very best to be mindful of trips/appointments or anything that might overcommit our Gators during testing! We can't wait to finally be able to Show
-                    Off Great Gator Learning! They have earned this time to SHINE!
-
                 </p>
                 <button class="lunchBtn btn btn-primary uk-button uk-button-primary" id="fetch-button">
                     Today's Lunch
                 </button>
-                <div>
-                    <div class="" id="users"></div>
-                </div>
+                <div id="users"></div>
             </section>
             <section class="eventContainer ">
                 <div class="upcoming"> Upcoming events: </div>
-                    <iframe class="dates" style = "border-width: 0;" src="https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=550&wkst=2&bgcolor=%23FFFFFF&src=ccpsnet.net_rmmioh372vg489dq503bho5bak@group.calendar.google.com&color=%236B3304&ctz=America%2FNew_York" width="150%" height="300" frameborder="0" scrolling="yes"></iframe>
+                    <iframe class="dates" style = "border-width: 0;" src="https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=550&wkst=2&bgcolor=%23FFFFFF&src=ccpsnet.net_rmmioh372vg489dq503bho5bak@group.calendar.google.com&color=%236B3304&ctz=America%2FNew_York" ></iframe>
                 </div>
             <section>
-            
         </div>
-        <div class="announce uk-card uk-card-default uk-card-body" >
-            <p id="summer-school" class="summer">
-                <div class="sectionTitles">Summer School</div>
-
-                SUMMER SCHOOL WILL BE AT SWIFT CREEK THIS SUMMER!
-                School meets Monday - Thursday,
-                June 27th, to July 21st.
-                9 AM - 1 PM
-                MORE INFORMATION AHEAD!
-            </p>
-        </div>   
+    <!------ lunch section end  --------->
        
-        <div id= "dress-code" class="announce uk-card uk-card-default uk-card-body">
-                <div class="sectionTitles">Dress Code</div>
-                As the weather gets nicer, let's help our Gators remember the following:
-                    Shirts should be worn to cover the full stomach area and should meet or go past their waistband on their pants/shorts; no crop tops.
-                    Spaghetti straps on shirts are not appropriate for school.
-                    Shorts should be finger tip in length
-                    Shoes should have backs; flip flops and slides are a safety concern
-                    Sports balls should remain at home; we have equipment for students to use at recess.
-        </div>
+        <h1 id="announcements" class="uk-heading-medium">New & Noteworthy</h1>
 
+        <!---------- start accordion section  --------->
+            <ul uk-accordion class="announce">
+                 <!-- learning w you -->
+                <li>
+                    <a class="uk-accordion-title" href="#">Learning With You connects with multicultural community</a>
+                    <div class="uk-accordion-content">    
+                        <p><span>Learning With You</span> is designed to help members of the multicultural community
+                            connect with Chesterfield County Public Schools. This free, four-part program is part of CCPS on the Go! Participants will get an overview of the
+                            school division, then take a deeper dive into topics like budgeting, instruction, operations and long-range planning. This is an opportunity to
+                            develop an understanding of all the components of one of the largest school divisions in the nation. <p>Each Learning With You gathering will take
+                            place 6-8:30 p.m. at the School Board Administration Building, located at 9900 Krause Road.</p>
+                    </div>
+                </li>
+                <!-- join us -->
+                <li> 
+                    <a class="uk-accordion-title sectionTitles" href="#">Join us for the Reservoir Race Series on May 1st!</a>
+                    <div class="uk-accordion-content">
+                        <img class="newsletter-images left" src="./assets/images/Running Gator.jpg"/>
+                        <p>Clover Hill Elementary, Swift Creek Elementary, and Woolridge Elementary have joined forces and created the
+                            Reservoir Run for 2022. Instead of three separate races, these schools will be hosting one large event on
+                            <span>Sunday, May 1</span>. This event includes a kids fun run at 2:00 pm as well as a 5k or 10k option that begins at 2:30
+                            pm. We hope you will be a part of it!</p>
+                            <br>
+                            <p>The purpose of this race is not only to bring together three neighboring
+                            school communities, but to also raise money for each school. This money will allow the schools to further
+                            enhance school enrichment with items such as new technology and equipment, health and wellness
+                            programs, staff conference sponsorships, and children's engineering programs, which will benefit students
+                            and teachers alike.</p>
+                    </div>
+                </li>
+                <!-- sol time -->
+                <li>
+                    <a class="uk-accordion-title " href="#">SOL TIME IS GATOR SPEED AHEAD!</a>
+                    <div class="uk-accordion-content">
+                        <p>While we know this is WAY ahead -- that's on purpose. We want to give families as much time as possible
+                            to plan! We know that students do best when they take the test as scheduled and as planned so … <a href=https://docs.google.com/document/d/14R1hf7Ll8OD8fqV_FkP2Bh6vMgiXNHv0vQKIWrRu6q8/edit>HERE'S THE SCHEDULE!</a></p>
+                            <p>Please do your very best to be mindful of trips/appointments or anything that might overcommit our Gators during testing! We can't wait to finally be able to Show
+                            Off Great Gator Learning! They have earned this time to SHINE!</p>
+                    </div>          
+                </li>
+                <!-- watch dogs -->
+                <li>
+                    <a class="uk-accordion-title" href="#">Watch Dogs</a>
+                    <div class="uk-accordion-content">
+                        <img class="newsletter-images right" src="./assets/images/watch dogs.jpg"/>
+                        <p>We are excited to invite our <span>Watch Dogs</span> back into the building, following
+                            the volunteer protocols. (See volunteer link below.)</p>
+                            <p>Watch Dogs are positive, male role models who support our Gators during
+                            the school day.
+                            If you would like to sign up to be a WatchDog, the sign up is located <a href=https://sites.google.com/ccpsnet.net/sceswatchdogs/home>
+                            HERE</a>.</p>
+                    </div>
+                </li>
+                <!-- summer school -->
+                <li>
+                    <a class="uk-accordion-title" href="#">Summer School</a>
+                    <div class="uk-accordion-content">
+                        <p><span>SUMMER SCHOOL WILL BE AT SWIFT CREEK THIS SUMMER!</span></p>
+                        <p>School meets Monday - Thursday, June 27th, to July 21st. 9 AM - 1 PM</p>
+                        <p>MORE INFORMATION AHEAD!</p>
+                    </div>
+                </li>
+                <!-- dress code -->
+                <li>
+                    <a class="uk-accordion-title" href="#">Dress Code</a>
+                    <div class="uk-accordion-content">
+                        <p>As the weather gets nicer, let's help our Gators remember the following:</p>
+                        <ul>Shirts should be worn to cover the full stomach area and should meet or go past their waistband on their pants/shorts; no crop tops.</ul>
+                        <ul>Spaghetti straps on shirts are not appropriate for school.</ul>
+                        <ul>Shorts should be finger tip in length</ul>
+                        <ul>Shoes should have backs; flip flops and slides are a safety concern</ul>
+                        <ul>Sports balls should remain at home; we have equipment for students to use at recess.</ul>
+                    </div>
+                </li>
+                <!-- flying squirrels -->
+                <li>
+                    <a class="uk-accordion-title" href="#">Flying Squirrels Game!</a>
+                    <div class="uk-accordion-content">
+                        <h5>~ Go NUTS for READING ~</h5>
+                        <img class="newsletter-images right" src="./assets/images/Flying Squirrels.jpg"/>
+                        <p>Families - If you know you will be taking your child to the reading night, you may
+                            purchase your family tickets using <a href=https://offer.fevo.com/altoona-curve-prhgay-8f8277a?fevoUri=altoona-curve-prhgay-8f8277a%2F>THIS LINK</a>. 
+                            <p>They are general admissions, but will still
+                            have a seat/section number for Swift Creek ES. We will all be able to sit together.</p>
+                        </p>
+                        <p>**The actual FREE student tickets will be dispersed the week we come back from Spring
+                        Break.**</p>
+                    </div>
+                </li>
+            </ul>                
+        </div>
+        <!--------- end accordion section --------->
+
+        <!-------- pta section  -------->
         <div class="announce uk-card uk-card-default uk-card-body">
-            <h3 id="volunteer" class="sectionTitles uk-card-title ">We Need You!</h3>
-            
-                Next year's PTA now has just two vacant positions: Treasurer and 5K Committee Chair.
-                The Treasurer is a vital role for the PTA. If we don't have one, the PTA won't be able to operate
+            <h3 id="volunteer" class="sectionTitles">The PTA Needs You!</h3>
+            <img class="newsletter-images" src="./assets/images/Making a Difference Logo.jpg"/>
+                Next year's PTA now has just two vacant positions: <span>Treasurer</span> and <span>5K Committee Chair</span>.
+                <p>The Treasurer is a vital role for the PTA. If we don't have one, the PTA won't be able to operate
                 next year. The gig runs in tandem with the PTAs fiscal year: July 1 - June 30. If you are good with
                 figures and believe in promoting the educational vitality of your child(ren) and SCES as a whole, please
-                volunteer! We are currently in the process of planning this year's 5K. It's a team effort with Woolridge
+                volunteer!</p>
+                
+                <p>We are currently in the process of planning this year's 5K. It's a team effort with Woolridge
                 Elementary and Clover Hill Elementary. If you're interested in the position and want to get a front-row
                 seat to see how it comes together before you take the role full-time, now is the perfect time to step up!
-                Please contact Catherine Vacovsky at vp@swiftcreekpta.org or via Facebook Messenger if you're interested in either position.
-            
+                Please contact Catherine Vacovsky at <a href="mailto:vp@swiftcreekpta.org">vp@swiftcreekpta.org</a> or via Facebook Messenger if you're interested in either position.</p>
         </div>
+        <!--------- end pta section ------->
 
-        <div class="announce uk-card uk-card-default uk-card-body">
-            <div id="save-date" class="sectionTitles">Save the Date</div>
-                 ~ Go NUTS for READING ~
-                Families - If you know you will be taking your child to the reading night, you may
-                purchase your family tickets using THIS LINK. They are general admissions, but will still
-                have a seat/section number for Swift Creek ES. We will all be able to sit together.
-                **The actual FREE student tickets will be dispersed the week we come back from Spring
-                Break.**
-            
-        </div>
-
-        <div class="announce uk-card uk-card-default uk-card-body">
-            <div id="announcements" class="sectionTitles">Announcements</div>
-                Learning With You connects with multicultural community
-                Learning With You is designed to help members of the multicultural community
-                connect with Chesterfield County Public Schools. This free, four-part program is part of CCPS on the Go! Participants will get an overview of the
-                school division, then take a deeper dive into topics like budgeting, instruction, operations and long-range planning. This is an opportunity to
-                develop an understanding of all the components of one of the largest school divisions in the nation. Each Learning With You gathering will take
-                place 6-8:30 p.m. at the School Board Administration Building, located at 9900 Krause Road. </br></br>
-        
-                Join us for the Reservoir Race Series on May 1st!
-                Clover Hill Elementary, Swift Creek Elementary, and Woolridge Elementary have joined forces and created the
-                Reservoir Run for 2022. Instead of three separate races, these schools will be hosting one large event on
-                Sunday, May 1. This event includes a kids fun run at 2:00 pm as well as a 5k or 10k option that begins at 2:30
-                pm. We hope you will be a part of it! The purpose of this race is not only to bring together three neighboring
-                school communities, but to also raise money for each school. This money will allow the schools to further
-                enhance school enrichment with items such as new technology and equipment, health and wellness
-                programs, staff conference sponsorships, and children's engineering programs, which will benefit students
-                and teachers alike.</br></br>
-      
-                SOL TIME IS GATOR SPEED AHEAD!
-                While we know this is WAY ahead -- that's on purpose. We want to give families as much time as possible
-                to plan! We know that students do best when they take the test as scheduled and as planned so … HERE'S THE SCHEDULE! Please do
-                your very best to be mindful of trips/appointments or anything that might overcommit our Gators during testing! We can't wait to finally be able to Show
-                Off Great Gator Learning! They have earned this time to SHINE!</br></br>          
-        
-                Watch Dogs
-                We are excited to invite our Watch Dogs back into the building, following
-                the volunteer protocols. (See volunteer link below.)
-                Watch Dogs are positive, male role models who support our Gators during
-                the school day.
-                If you would like to sign up to be a WatchDog, the sign up is located
-                HERE.
-
-        <div>
-            <div class="uk-tile uk-tile-secondary">
-                <p class="uk-h4">
-                    Watch Dogs
-                    We are excited to invite our Watch Dogs back into the building, following
-                    the volunteer protocols. (See volunteer link below.)
-                    Watch Dogs are positive, male role models who support our Gators during
-                    the school day.
-                    If you would like to sign up to be a WatchDog, the sign up is located
-                    HERE.
-                </p>
-            </div>
-        </div>
-        <div>
-            <div class="uk-tile uk-tile-primary">
-                <p class="uk-h4">
-                    Resource News
-                    GREAT JOB GATORS!! We are keeping books dry!!!
-                    NOW we need to work on- returning overdue books. A lot of books have been out of the library for over 3 weeks!!
-                    Please use this week and Spring Break to look for these overdue items.
-                    Librarian- Julie_Profita@ccpsnet.net
-                    Music Teacher- MeredithA_Haynie@ccpsnet.net
-                    PE Teacher- Ryan_Marceron@ccpsnet.net
-                    Art Teacher- Sandi_Wiley@ccpsnet.net
-                    STEAM Teacher- Rachel_Roos@ccpsnet.net
-                </p>
-
-            </div>
-        </div>
-           
+        <!-------- resources  -------->
         <div id="resources" class="announce uk-card uk-card-default uk-card-body">
             <div class="sectionTitles">Resources</div>
-                Resource News
-                GREAT JOB GATORS!! We are keeping books dry!!!
+                <p>Resource News</p>
+                <span>GREAT JOB GATORS!!</span> We are keeping books dry!!!
                 NOW we need to work on- returning overdue books. A lot of books have been out of the library for over 3 weeks!!
                 Please use this week and Spring Break to look for these overdue items.
-                Librarian- Julie_Profita@ccpsnet.net
-                Music Teacher- MeredithA_Haynie@ccpsnet.net
-                PE Teacher- Ryan_Marceron@ccpsnet.net
-                Art Teacher- Sandi_Wiley@ccpsnet.net
-                STEAM Teacher- Rachel_Roos@ccpsnet.net
+                <p>Librarian-<a href="mailto:Julie_Profita@ccpsnet.net">Julie_Profita@ccpsnet.net</a></p>
+                <p>Music Teacher-<a href="mailto:MeredithA_Haynie@ccpsnet.net">MeredithA_Haynie@ccpsnet.net</a></p>
+                <p>PE Teacher-<a href="mailto:Ryan_Marceron@ccpsnet.net">Ryan_Marceron@ccpsnet.net</a></p>
+                <p>Art Teacher-<a href="mailto:Sandi_Wiley@ccpsnet.net">Sandi_Wiley@ccpsnet.net</a></p>
+                <p>STEAM Teacher-<a href="mailto:Rachel_Roos@ccpsnet.net">Rachel_Roos@ccpsnet.net</a></p>
         </div>
-   <script src="./assets/js/script.js"></script> 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <!-------- end resources  -------->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -59,3 +59,7 @@ While one may argue that if the school were to implement such a newsletter they 
 
 -Ulkit
 
+# Screenshot 
+
+<img width="1334" alt="Gators-Newsletter" src="https://user-images.githubusercontent.com/96275616/163069117-c1cd73de-e161-4309-bc29-5450a6c1490a.png">
+
