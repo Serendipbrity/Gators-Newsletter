@@ -8,6 +8,18 @@ I want a weekly newsletter that is mobile-friendly
 
 And gives me important information on the upcoming week.
 
+When I click the absentee link in nav,
+
+Then I am presented with a modal to fill out.
+
+When I click submit,
+
+then my inputs are stored in local storage.
+
+When I open the modal back up,
+
+then when I click the absence records link, I am shown my inputs
+
 # Acceptance Criteria
 When I open the newsletter on any device
 
@@ -22,6 +34,7 @@ So that I can reference only what I want to read easily
 There are clickable links in the newsletter
 
 So that I can take action on any event I am interested in.
+
 
 
 # GitHub Link
