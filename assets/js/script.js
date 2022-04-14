@@ -45,6 +45,7 @@ abBtn.addEventListener('click', function() {
 // click x to exit
 closeModal.addEventListener('click', function() {
     modal.style.display = "none";
+
 })
 var form = document.getElementById("form");
 var student = document.getElementById("student");
@@ -85,6 +86,8 @@ storedInput.append(stored);
 
 console.log(stored);
 
+// document.getElementById("stu").textContent = stored[0];
+
 // show stored input
 storedInput.classList.remove('hide');
 storedInput.classList.add('show');
@@ -97,16 +100,18 @@ form.classList.add('hide');
 abLink.classList.remove('show');
 abLink.classList.add('hide');
 
+
 // add current date to Date Missed:
 document.getElementById("date").textContent = currentDate;
 
 
+// document.getElementById("inf").textContent = 
+
 // for (var i = 0; i < localStorage.length; i++) {
-//     console.log(localStorage.getItem(localStorage.key(i)));
+//     console.log(localStorage.getItem(localStorage.key(i)))
+  
 //   }
-//   info.textContent(localStorage.getItem(localStorage.info.value));
-// info.innerHTML(info.value);
-// document.getElementById("inf").innerHTML = stored.info.value;
+  
 })
 
 
