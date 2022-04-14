@@ -66,6 +66,10 @@ nav {
   /* end nav */
 
   /* ---- absent modal start ---- */
+#reason {
+    margin-left: 100px;
+}
+
 #modal-content {
     background: #efefef;
     margin: 35px auto;
@@ -153,15 +157,19 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: forestgreen;
 }
+/* show/hide modal for form and record */
+.hide {
+display: none;
+};
+
+.show {
+display: block;
+};
+
 
 /* ---- absent modal end ---- */
 
-.sectionTitles {
-    color: darkgreen;
-    font-size: larger;
-    font-weight: 800;
-    text-decoration: underline;
-}
+
 
 
 /* lunch and events full container */
@@ -269,14 +277,17 @@ span {
 .newsletter-images {
     position: relative;
     border-radius: 5px;
+    max-width: 20%;
+    float: right;
 }
 
+/*  learning with you */
 .uk-accordion-title {
     color: darkgreen;
     font-size: 24px;
     font-weight: bold;
 }
-
+/* change accordian colors when hovering */
 .uk-accordion-title:hover {
     color: forestgreen;
 }
@@ -298,6 +309,24 @@ span {
     float: left;
     padding: 20px;
 }
+/*  move "go nuts for reading to be centered under title */
+#gonuts {
+ margin-left: 200px;
+ color: darkgreen;
+}
+
+/* moved to bottom to ensure green underlined titles */
+.sectionTitles {
+    color: darkgreen;
+    font-size: larger;
+    font-weight: 800;
+    text-decoration: underline;
+}
+/* make the x in the modal black */
+.close-modal {
+    color: black;
+}
+
 
 .right {
     float: right;
